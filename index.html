@@ -64,9 +64,9 @@
 					<div class="form-input-inline">
 		        <span class="label">Animation type</span>
 		        <select name="type" onchange="optionCtrl.updateForm()">
-		          <option value="delayed" selected="selected">Delayed start</option>
+		          <option value="delayed">Delayed start</option>
 		          <option value="async">Syncronous</option>
-		          <option value="oneByOne">One By One</option>
+		          <option value="oneByOne" selected="selected">One By One</option>
 							<!-- This is not mainstream enough to be released
 		          <option value="script">script</option>
 		          <option value="scenario">scenario</option>
@@ -84,7 +84,7 @@
 				<fieldset>
 					<label class="form-input-inline">
 		        <span class="label">Duration <span class="label-info">in ms</span></span>
-		        <input type="number" min="0" name="duration" value="3000" step="100"/>
+		        <input type="number" min="0" name="duration" value="60000" step="100"/>
 		      </label>
 
 		      <div class="form-input-inline">
