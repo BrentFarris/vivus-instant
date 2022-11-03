@@ -178,7 +178,7 @@ ViewerController.prototype.refreshSVG = function () {
  * or other stuff..) it will be kept in the output.
  */
 ViewerController.prototype.download = function () {
-    var blob = new Blob([this.svgWrap.innerHTML], {type: this.SVG_CONTENT_TYPE}),
+    var blob = new Blob([this.svgWrap.innerHTML.replace(/.*?<!/, "<!")], {type: this.SVG_CONTENT_TYPE}),
         url = window.URL.createObjectURL(blob);
     this.downloadAnchor.href = url;
     this.downloadAnchor.download = this.svgFileName.replace(/\.svg$/i, '_animated.svg');
