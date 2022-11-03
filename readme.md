@@ -1,6 +1,6 @@
 # Vivus instant
 
-[Try Vivus Instant](https://maxwellito.github.io/vivus-instant/).
+[https://brentfarris.github.io/vivus-instant/](https://brentfarris.github.io/vivus-instant/)
 
 > It's like [Vivus](https://maxwellito.github.io/vivus/) but for a disposable usage. Powered by CSS animations.
 
